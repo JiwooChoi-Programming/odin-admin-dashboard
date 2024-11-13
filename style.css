@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+:root {
+    --flex-box: flex;
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -22,7 +26,7 @@ body {
 
 .logo-text {
     align-items: center;
-    display: flex;
+    display: var(--flex-box);
     justify-content: flex-start;
     gap: 10px;
     margin: 10px 20px;
@@ -42,7 +46,7 @@ body {
 
 .icon-text {
     align-items: center;
-    display: flex;
+    display: var(--flex-box);
     justify-content: flex-start;
     gap: 15px;
     margin: 20px 30px;
@@ -53,8 +57,73 @@ body {
     font-size: 14px;
 }
 
-
 .main {
     background-color: white;
+    display: grid;
     height: 100vh;
+    grid-template-rows: 20% 80%;
+}
+
+.header {
+    background-color: white;
+    display: var(--flex-box);
+    flex-direction: column;
+}
+
+.navbar, .left {
+    align-items: center;
+    display: var(--flex-box);
+    justify-content: center;
+    margin: 5px 30px;
+}
+
+.search-container {
+    margin: 0 auto;
+}
+
+.form-input {
+    background-color: lightgrey;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    height: 30px;
+    vertical-align: middle;
+    width: 500px;
+}
+
+.user-container {
+    align-items: center;
+    display: var(--flex-box);
+    gap: 20px;
+}
+
+.welcome {
+    align-items: center;
+    display: var(--flex-box);
+    justify-content: space-between;
+    margin: 5px 20px;
+}
+
+.welcome-user {
+    margin: 0 20px;
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 20%;
+}
+
+.button {
+    background-color: #0ea5e9;
+    border: 1px solid #0ea5e9;
+    border-radius: 20px;
+    color: white;
+    height: 35px;
+    width: 70px;
+}
+
+.content {
+    background-color: #e5e5e5;
 }
