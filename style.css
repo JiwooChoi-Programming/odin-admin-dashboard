@@ -21,6 +21,12 @@ h6 {
     font-size: 18px;
 }
 
+hr {
+    border: 0.5px solid #737373;
+    margin-left: 20px;
+    width: 80%;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 15% 85%;
@@ -167,4 +173,44 @@ h6 {
     display: flex;
     justify-content: flex-end;
     width: 80%;
+}
+
+.ann-trend {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.announcement-card, .trend-card {
+    background-color: white;
+    border-radius: 10px;
+    height: 80%;
+    width: 60%;
+}
+
+.announcement-text {
+    padding: 5px 20px;
+}
+
+.announcement-text h6 {
+    font-size: 18px;
+}
+
+.announcement-text p, .trend-text p {
+    color: #737373;
+    font-size: 14px;
+}
+
+.trend-card {
+    height: 70%;
+}
+
+.trend-image-text {
+    align-items: center;
+    display: flex;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+
+.trend-text {
+    margin-left: 20px;
 }
